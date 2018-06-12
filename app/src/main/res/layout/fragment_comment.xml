@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.xtlog.android.zhihudaily.fragment.CommentFragment">
+
+    <!--暂无评论的占位视图-->
+    <TextView
+        android:id="@+id/fragment_comment_empty_view"
+        android:layout_centerInParent="true"
+        android:text="暂无评论"
+        android:visibility="invisible"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/ZhiHu_text_black"
+        android:alpha="0.26"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+    <!--阴影条-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/nav_bottom_shadow"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_comment_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--内容-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--列表-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_comment_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ProgressBar
+        android:id="@+id/fragment_comments_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>

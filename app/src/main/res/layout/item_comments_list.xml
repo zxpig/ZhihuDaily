@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!--每个评论的分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/ZhiHu_bg_gery"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--头像-->
+        <ImageView
+            android:id="@+id/item_comments_tou_xiang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            tools:background="@color/ZhiHu_bg_gery"/>
+
+        <!--评论-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/item_comments_nick_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/ZhiHu_text_black"
+                android:alpha="0.87"
+                tools:text="还是个宝宝"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/item_comments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/ZhiHu_text_black"
+                android:alpha="0.54"
+                tools:text="简单点，打广告的方式简单点。"/>
+
+            <TextView
+                android:id="@+id/item_comments_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ZhiHu_text_black"
+                android:alpha="0.26"
+                android:textSize="12sp"
+                tools:text="12-25 00:00"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

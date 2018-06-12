@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+    <Button
+        android:id="@+id/dialog_comments_good_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start|center"
+        android:paddingLeft="32dp"
+        android:text="赞同"/>
+    <Button
+        android:id="@+id/dialog_comments_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start|center"
+        android:paddingLeft="32dp"
+        android:text="举报"/>
+    <Button
+        android:id="@+id/dialog_comments_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start|center"
+        android:paddingLeft="32dp"
+        android:text="复制"/>
+    <Button
+        android:id="@+id/dialog_comments_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start|center"
+        android:paddingLeft="32dp"
+        android:text="回复"/>
+
+</LinearLayout>

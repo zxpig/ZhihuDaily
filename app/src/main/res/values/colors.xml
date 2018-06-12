@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    //Theme BLUE
+    <color name="ZhiHu_blue">#2196F3</color>
+    <color name="ZhiHu_blue_light">#bbdefb</color>
+    <color name="ZhiHu_blue_dark">#1976D2</color>
+
+    //TEXT
+    <color name="ZhiHu_text_white">#ffffff</color>
+    <color name="ZhiHu_text_black">#000000</color>
+
+    //BG
+    <color name="ZhiHu_bg_gery">#ededed</color>
+
+    //COLOR
+    <color name="ZhiHu_tab_slide">#ffffff</color>
+    <color name="ZhiHu_section_block">#9E9E9E</color>
+
+    <color name="MD_blue_light">#00bcd4</color>
+    <color name="MD_fresh_green">#009688</color>
+    <color name="MD_green">#4CAF50</color>
+    <color name="MD_gery">#9E9E9E</color>
+
+
+
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xtlog.android.zhihudaily">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="知乎精选"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DetailActivity"
+            android:label="文章">
+        </activity>
+        <activity
+            android:name=".activity.CommentActivity"
+            android:label="查看评论">
+        </activity>
+        <activity
+            android:name=".activity.CommentsDialogActivity"
+            android:label="该评论"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+        </activity>
+        <activity
+            android:name=".activity.SingleSectionActivity"
+            android:label="栏目">
+        </activity>
+
+        <service
+            android:name=".service.PushService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

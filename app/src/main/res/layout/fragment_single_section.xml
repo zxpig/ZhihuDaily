@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--阴影条-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/nav_bottom_shadow"/>
+    <!--内容-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_single_section_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/fragment_single_section_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+</RelativeLayout>
