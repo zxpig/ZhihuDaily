@@ -1,4 +1,4 @@
-# ZhihuDaily
+﻿# ZhihuDaily
 第三方知乎日报客户端，全部数据来自知乎（Zhihu）API
 ### 功能介绍
 1. 查看日报最新/热门文章：获取最新/热门文章，以及每篇文章的额外信息，如：评论数、收藏数、点赞数。
@@ -11,4 +11,3 @@
 ![](screenshot/screenshot3.png)
 ![](screenshot/screenshot4.png)
 ![](screenshot/screenshot5.png)
-![](screenshot/screenshot6.png)
